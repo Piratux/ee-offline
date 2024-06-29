@@ -35,6 +35,22 @@ You're now good to go! As an example, find a script with a catchy name, such as 
 This way, when the game tries to kill a player, it will do absolutely nothing. Or, perhaps, if you don't want Fake Players to also be immortal, you could instead put `if(isme) return;` at the top of the function. What you do is entirely up to you.
 
 Once you have made changes that you're satisfied with, you can build the project into an .swf. On the top bar, there should be a drop-down menu, with options of `Debug` or `Release`. The Debug version runs much slower (at ~30fps) but the errors it logs will allow you to track down issues easier. The Release version is the version that you can play and possibly even share with others. To the left of the drop-down are two buttons: a blue play button to build and run the swf, and a cog to just build the swf. By default, the .swf file will end up where your `WebClient.as3proj` file is, in a sub-folder called either `bin` or `bin-debug`, depending on which version you built.
- 
+
+### Additional information
+To setup an environment where you can debug EE Offline application you need to setup the following things on Windows 10 (although on other platforms it will be similar):
+- Download release and debug flash players from [here](https://github.com/Piratux/ee-offline/releases/tag/Flash-player-executables).
+ - To run release `.swf` files use `flashplayer32_win_sa.exe`.
+ - To run debug `.swf` files use `flashplayer32_win_sa_debug.exe`.
+ - To automatically open `.swf` files during debugging:
+  - Right click on `.swf` file and select properties.
+  - In general tab, `Opens with` row click `Change...` and select `flashplayer32_win_sa_debug.exe`.
+- Download Java JDK 1.7 32-bit version from [here](https://www.filehorse.com/download-java-development-kit-32/19235/download/).
+ - Run the downloaded executable.
+ - Create (or set) `JAVA_HOME` variable to `C:\Program Files (x86)\Java\jdk1.7.0_76` (See https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)
+ - Expose java binary in `Path` variable as `C:\Program Files (x86)\Java\jdk1.7.0_76\jre\bin`
+
+### Troubleshooting
+If after launching debug version you see message `No debug Flash player connection request`, it means you're not running debug version of flash executable (`flashplayer32_win_sa_debug.exe`).
+
 ## Community
 If you need any help with modding, want to share your creations, or just want to talk about the game, you can join the [EEO Discord](https://discord.gg/V5maATbSgc)
