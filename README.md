@@ -39,15 +39,15 @@ Once you have made changes that you're satisfied with, you can build the project
 ### Additional information
 To setup an environment where you can debug EE Offline application you need to setup the following things on Windows 10 (although on other platforms it will be similar):
 - Download release and debug flash players from [here](https://github.com/Piratux/ee-offline/releases/tag/Flash-player-executables).
- - To run release `.swf` files use `flashplayer32_win_sa.exe`.
- - To run debug `.swf` files use `flashplayer32_win_sa_debug.exe`.
- - To automatically open `.swf` files during debugging:
-  - Right click on `.swf` file and select properties.
-  - In general tab, `Opens with` row click `Change...` and select `flashplayer32_win_sa_debug.exe`.
+  - To run release `.swf` files use `flashplayer32_win_sa.exe`.
+  - To run debug `.swf` files use `flashplayer32_win_sa_debug.exe`.
+  - To automatically open `.swf` files during debugging:
+    - Right click on `.swf` file and select properties.
+    - In general tab, `Opens with` row click `Change...` and select `flashplayer32_win_sa_debug.exe`.
 - Download Java JDK 1.7 32-bit version from [here](https://www.filehorse.com/download-java-development-kit-32/19235/download/).
- - Run the downloaded executable.
- - Create (or set) `JAVA_HOME` variable to `C:\Program Files (x86)\Java\jdk1.7.0_76` (See https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)
- - Expose java binary in `Path` variable as `C:\Program Files (x86)\Java\jdk1.7.0_76\jre\bin`
+  - Run the downloaded executable.
+  - Create (or set) `JAVA_HOME` variable to `C:\Program Files (x86)\Java\jdk1.7.0_76` (See https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)
+  - Expose java binary in `Path` variable as `C:\Program Files (x86)\Java\jdk1.7.0_76\jre\bin`
 
 ### Troubleshooting
 If after launching debug version you see message `No debug Flash player connection request`, it means you're not running debug version of flash executable (`flashplayer32_win_sa_debug.exe`).
